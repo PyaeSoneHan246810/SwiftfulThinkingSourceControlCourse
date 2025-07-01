@@ -29,6 +29,7 @@ struct ContentView: View {
                 .tint(color)
             }
             .padding()
+            .navigationTitle("Welcome")
         }
     }
     private func toggleColor() {
