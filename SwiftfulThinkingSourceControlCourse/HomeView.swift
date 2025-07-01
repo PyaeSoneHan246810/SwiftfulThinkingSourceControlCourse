@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    let color: Color
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(Color.pink.opacity(0.25))
+                .fill(color.opacity(0.25))
                 .ignoresSafeArea()
         }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(
+        color: .pink
+    )
 }

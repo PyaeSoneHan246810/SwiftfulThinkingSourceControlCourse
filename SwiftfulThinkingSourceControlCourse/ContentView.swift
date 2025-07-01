@@ -8,21 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var color: Color = .pink
     var body: some View {
         NavigationStack {
             VStack {
                 Image(systemName: "heart.fill")
                     .font(.largeTitle)
-                    .foregroundStyle(.pink)
+                    .foregroundStyle(color)
+                    .onTapGesture {
+                        toggleColor()
+                    }
                 Text("Swiftful Thinking")
                 NavigationLink("Home") {
-                    HomeView()
+                    HomeView(
+                        color: color
+                    )
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
-                .tint(.pink)
+                .tint(color)
             }
             .padding()
+        }
+    }
+    private func toggleColor() {
+        withAnimation {
+            color = color == .pink ? .orange : .pink
         }
     }
 }
