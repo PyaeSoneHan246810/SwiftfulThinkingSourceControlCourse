@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(Color.mint.opacity(0.25))
+                .fill(Color.pink.opacity(0.25))
                 .ignoresSafeArea()
         }
     }
