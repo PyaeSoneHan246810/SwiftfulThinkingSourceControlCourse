@@ -15,11 +15,14 @@ struct HomeView: View {
                 .fill(color.opacity(0.25))
                 .ignoresSafeArea()
         }
+        .navigationTitle("Home")
     }
 }
 
 #Preview {
-    HomeView(
-        color: .pink
-    )
+    NavigationStack {
+        HomeView(
+            color: .pink
+        )
+    }
 }
