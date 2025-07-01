@@ -9,19 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "heart.fill")
-                .font(.largeTitle)
-                .foregroundStyle(.pink)
-            Text("Swiftful Thinking")
-            Button("Get Started") {
-                
+        NavigationStack {
+            VStack {
+                Image(systemName: "heart.fill")
+                    .font(.largeTitle)
+                    .foregroundStyle(.pink)
+                Text("Swiftful Thinking")
+                NavigationLink("Home") {
+                    HomeView()
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+                .tint(.pink)
             }
-            .buttonStyle(.borderedProminent)
-            .buttonBorderShape(.capsule)
-            .tint(.pink)
+            .padding()
         }
-        .padding()
     }
 }
 
