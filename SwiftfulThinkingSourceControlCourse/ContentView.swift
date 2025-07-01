@@ -29,6 +29,7 @@ struct ContentView: View {
                 .tint(color)
             }
             .padding()
+            .background(color.opacity(0.25), in: RoundedRectangle(cornerRadius: 12.0))
             .navigationTitle("Welcome")
         }
     }
