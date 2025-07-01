@@ -14,6 +14,7 @@ struct HomeView: View {
             Rectangle()
                 .fill(color.opacity(0.25))
                 .ignoresSafeArea()
+            Text("This is home.")
         }
         .navigationTitle("Home")
     }
