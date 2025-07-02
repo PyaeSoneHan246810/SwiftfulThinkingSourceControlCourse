@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var color: Color = .pink
+    @State private var color: Color = .mint
     var body: some View {
         NavigationStack {
             HStack {
