@@ -10,11 +10,8 @@ import SwiftUI
 struct HomeView: View {
     let color: Color
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(color.opacity(0.25))
-                .ignoresSafeArea()
-            Text("This is home.")
+        TabView {
+            
         }
         .navigationTitle("Home")
     }
