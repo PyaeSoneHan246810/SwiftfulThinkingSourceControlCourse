@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             HStack {
-                Image(systemName: "swift")
+                Image(systemName: "figure.wave")
                     .font(.largeTitle)
                     .foregroundStyle(color)
                     .onTapGesture {
