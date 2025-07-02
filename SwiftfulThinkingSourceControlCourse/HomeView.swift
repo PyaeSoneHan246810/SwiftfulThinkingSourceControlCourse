@@ -16,6 +16,9 @@ struct HomeView: View {
                     color: color
                 )
             }
+            Tab("Profile", systemImage: "person.fill") {
+                ProfileView()
+            }
         }
         .navigationTitle("Home")
         .tint(color)
