@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var color: Color = .pink
     var body: some View {
         NavigationStack {
-            VStack {
+            HStack {
                 Image(systemName: "swift")
                     .font(.largeTitle)
                     .foregroundStyle(color)
@@ -19,7 +19,7 @@ struct ContentView: View {
                         toggleColor()
                     }
                 Text("Swiftful Thinking")
-                NavigationLink("Home") {
+                NavigationLink("Get Started") {
                     HomeView(
                         color: color
                     )
