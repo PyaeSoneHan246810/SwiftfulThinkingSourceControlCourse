@@ -18,7 +18,6 @@ struct ContentView: View {
                     .onTapGesture {
                         toggleColor()
                     }
-                Text("Swiftful Thinking")
                 NavigationLink("Get Started") {
                     HomeView(
                         color: color
