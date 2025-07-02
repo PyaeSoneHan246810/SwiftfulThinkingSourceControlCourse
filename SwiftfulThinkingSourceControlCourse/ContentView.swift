@@ -25,7 +25,6 @@ struct ContentView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
-                .tint(color)
             }
             .padding()
             .background(color.opacity(0.25), in: RoundedRectangle(cornerRadius: 12.0))
@@ -35,10 +34,10 @@ struct ContentView: View {
                     Button("Profile", systemImage: "person.fill") {
                         
                     }
-                    .tint(color)
                 }
             }
         }
+        .tint(color)
     }
     private func toggleColor() {
         withAnimation {
