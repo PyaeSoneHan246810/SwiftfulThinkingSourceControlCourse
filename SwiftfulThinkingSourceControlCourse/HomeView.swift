@@ -19,6 +19,9 @@ struct HomeView: View {
             Tab("Profile", systemImage: "person.fill") {
                 ProfileView()
             }
+            Tab("Settings", systemImage: "gear.circle.fill") {
+                ProfileView()
+            }
         }
         .navigationTitle("Home")
         .tint(color)
