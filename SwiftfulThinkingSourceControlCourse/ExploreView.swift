@@ -10,7 +10,14 @@ import SwiftUI
 struct ExploreView: View {
     var body: some View {
         ScrollView {
-            
+            VStack {
+                ForEach(0..<10) { _ in
+                    RoundedRectangle(cornerRadius: 12.0)
+                        .fill(Color.orange.gradient)
+                        .frame(height: 100.0)
+                }
+            }
+            .padding(12.0)
         }
     }
 }
