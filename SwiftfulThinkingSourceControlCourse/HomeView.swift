@@ -11,9 +11,12 @@ struct HomeView: View {
     let color: Color
     var body: some View {
         TabView {
-            
+            Tab("Explore", systemImage: "safari.fill") {
+                ExploreView()
+            }
         }
         .navigationTitle("Home")
+        .tint(color)
     }
 }
 
