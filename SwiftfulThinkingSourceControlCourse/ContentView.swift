@@ -26,7 +26,7 @@ struct ContentView: View {
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
             }
-            .padding()
+            .frame(width: 200.0, height: 200.0)
             .background(color.opacity(0.25), in: RoundedRectangle(cornerRadius: 12.0))
             .navigationTitle("Welcome")
         }
