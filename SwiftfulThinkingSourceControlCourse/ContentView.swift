@@ -29,13 +29,6 @@ struct ContentView: View {
             .padding()
             .background(color.opacity(0.25), in: RoundedRectangle(cornerRadius: 12.0))
             .navigationTitle("Welcome")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Profile", systemImage: "person.fill") {
-                        
-                    }
-                }
-            }
         }
         .tint(color)
     }
