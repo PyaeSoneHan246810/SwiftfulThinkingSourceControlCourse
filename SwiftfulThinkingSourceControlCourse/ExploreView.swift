@@ -12,12 +12,9 @@ struct ExploreView: View {
         ScrollView {
             
         }
-        .navigationTitle("Explore")
     }
 }
 
 #Preview {
-    NavigationStack {
-        ExploreView()
-    }
+    ExploreView()
 }
