@@ -1,3 +1,0 @@
-import SwiftUI
-
-// some comment
