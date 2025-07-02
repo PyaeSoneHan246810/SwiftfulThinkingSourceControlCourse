@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ExploreView: View {
+    let color: Color
     var body: some View {
         ScrollView {
             VStack {
                 ForEach(0..<10) { _ in
                     RoundedRectangle(cornerRadius: 12.0)
-                        .fill(Color.orange.gradient)
+                        .fill(color.gradient)
                         .frame(height: 100.0)
                 }
             }
@@ -23,5 +24,7 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView()
+    ExploreView(
+        color: .mint
+    )
 }

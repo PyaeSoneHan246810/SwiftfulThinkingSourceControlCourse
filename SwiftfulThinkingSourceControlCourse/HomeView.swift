@@ -12,7 +12,9 @@ struct HomeView: View {
     var body: some View {
         TabView {
             Tab("Explore", systemImage: "safari.fill") {
-                ExploreView()
+                ExploreView(
+                    color: color
+                )
             }
         }
         .navigationTitle("Home")
@@ -23,7 +25,7 @@ struct HomeView: View {
 #Preview {
     NavigationStack {
         HomeView(
-            color: .pink
+            color: .mint
         )
     }
 }
